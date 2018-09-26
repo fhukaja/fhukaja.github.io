@@ -71,6 +71,27 @@ input, select, textarea {
 	appearance: none;
 }
 
+.shadow {
+  color: #fff;
+  font-weight: bold;
+  text-shadow:
+    -3px -3px 0 #222,
+    3px -3px 0 #222,
+    -3px 3px 0 #222,
+    3px 3px 0 #222,
+    4px 4px 0 #fff,
+    5px 5px 0 #fff,
+    6px 6px 0 #fff,
+    7px 7px 0 #fff;
+  line-height: 0.8em;
+  letter-spacing: 0.1em;
+  transform: scaleY(0.7);
+  -webkit-transform: scaleY(0.7);
+  -moz-transform: scaleY(0.7);
+  margin:0;
+  text-align: center;
+}
+
 /* Basic */
 
 	@-ms-viewport {
@@ -1287,6 +1308,7 @@ input, select, textarea {
 		#header .logo span {
 			font-weight: 700;
 			font-size: 8em;
+			letter-spacing: 0px;
 		}
 
 			#header .logo .icon:before {
@@ -1296,7 +1318,7 @@ input, select, textarea {
 		#header .content {
 			border-style: solid;
 			border-color: #ffffff;
-			border-top-width: 1px;
+			border-top-width: 0px;
 			border-bottom-width: 1px;
 			max-width: 100%;
 		}
@@ -1570,7 +1592,7 @@ input, select, textarea {
 			/*width: 100vw;*/
 			width: 50em;
 			/*height: 100vh;*/
-			margin:2em 0;
+			margin:8em 0 2em;
 			max-height: 100%;
 			max-width: 100%;
 			background-color: rgba(27, 31, 34, 0.85);
@@ -1579,22 +1601,56 @@ input, select, textarea {
 			opacity: 0;
 		}
 			#main article:before {
-				content: 'F.H.U. KaJa';
+				content: 'KaJa';
 				display: block;
 				position: absolute;
-				top: -1.6em;
-				left: 2.5rem;
-				right: 0;
-				font-size: 1.5rem;
-				font-weight: bold;
+				top: -1em;
+				left: 2rem;
+				font-size: 6em;
+		    color: #fff;
+			  font-weight: bold;
+			  text-shadow:
+			    -3px -3px 0 #222,
+			    3px -3px 0 #222,
+			    -3px 3px 0 #222,
+			    3px 3px 0 #222,
+			    4px 4px 0 #fff,
+			    5px 5px 0 #fff,
+			    6px 6px 0 #fff,
+			    7px 7px 0 #fff;
+			  line-height: 0.8em;
+			  letter-spacing: 0em;
+			  transform: scaleY(1);
+			  -webkit-transform: scaleY(1);
+			  -moz-transform: scaleY(1);
+			  margin:0;
+			  text-align: center;
+			  /*right: 0;*/
+				/*font-size: 1.5rem;*/
+				/*font-weight: bold;*/
 			}
-
+			#main #contact i { font-weight:600; }
 			#main article.active {
 				-moz-transform: translateY(0);
 				-webkit-transform: translateY(0);
 				-ms-transform: translateY(0);
 				transform: translateY(0);
 				opacity: 1;
+			}
+			#main article:not(#policy) p::first-letter {
+		    font-size: 4em;
+		    font-weight: 700;
+		    margin-right: 0.1em;
+		    float: left;
+		    color: #fff;
+		    text-shadow: -2px -2px 0 #222, 2px -2px 0 #222, -2px 2px 0 #222, 2px 2px 0 #222, 3px 3px 0 #fff, 4px 4px 0 #fff;
+		    line-height: 0.8em;
+		    letter-spacing: 0.1em;
+		    transform: scaleY(0.7);
+		    -webkit-transform: scaleY(0.8);
+		    -moz-transform: scaleY(0.7);
+		    margin: 0;
+		    text-align: center;
 			}
 
 			#main article .close {
@@ -1644,7 +1700,8 @@ input, select, textarea {
 			}
 
 			#main article:before {
-				left: 2rem;
+				left: 1.5rem;
+				/*left: 2rem;*/
 			}
 
 				#main article .close:before {
