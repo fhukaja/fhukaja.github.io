@@ -1,5 +1,5 @@
 # Credits
-Made with :heart: from [&copy;HTML5 UP](https://html5up.net) by [qL.b](https://github.com/qLb)
+Made with :heart: from [&copy;HTML5 UP](https://html5up.net/dimension) by [qL.b](https://github.com/qLb)
 
 # LICENSE
 MIT License
